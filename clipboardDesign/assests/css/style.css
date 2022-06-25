@@ -1,0 +1,99 @@
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --light-grayish-Blue: hsl(201, 11%, 95%);
+    
+}
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.main-section {
+    width: 100%;
+}
+.main-section {
+    background-image: url(../images/bg-header-desktop.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.nav-logo {
+    transform: translate(0,-100px) scale(0);
+    animation: fs 4s forwards;
+}
+@keyframes fs {
+    100% {
+        transform: translate(0) scale(1);
+    }
+}
+.clipboard-history {
+    width: 600px;
+    margin-top: 100px;
+}
+.btn {
+    animation: 2s animate forwards;
+    transform: translate(0px,-20px) scale(1);
+}
+@keyframes animate{
+    100% {
+        transform: translate(0) scale(1);
+    }
+}
+.btn-download-ios {
+ background: var(--Grayish-Blue);
+ padding: 8px 30px;
+ box-shadow: 0 0  0 5px var(--Grayish-Blue);
+ transition: 0.3s all ease;
+}
+.btn-download-mac {
+  background: var(--Light-Blue);
+  padding: 8px 30px;
+  box-shadow: 0 0 0 5px var(--Light-Blue);
+  transition: 0.3s all ease;
+}
+.btn-download-ios:hover {
+    background-color: white;
+    color: black !important;
+}
+.btn-download-mac:hover {
+    background-color: white;
+    color: black !important;
+}
+.home-text {
+    color: var(--Strong-Cyan);
+    line-height: 1.7;
+}
+.text-clr {
+    color: var(--Strong-Cyan);
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+footer {
+    background: var(--light-grayish-Blue);
+    padding: 30px 0;
+    margin-top: 100px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+.footer-img {
+    max-width: 50px;
+}
+@media (max-width:930px) {
+    .buttons {
+        flex-direction: column;
+    }
+    .quick-search {
+        text-align: center;
+    }
+    .img-device {
+        max-width: 350px;
+    }
+    .clipboard-contents {
+        text-align: center;
+    }
+}

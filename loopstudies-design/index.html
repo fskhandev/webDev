@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+      <div class="container">
+          <div class="main-section">
+              <div class="navbar">
+                  <h1>loopstudies</h1>
+                  <button class="nav-btn-toggle" onclick="openNav()">
+                      <span class="one" id="one"></span>
+                      <span class="two" id="two"></span>
+                      <span class="three" id="three"></span>
+                  </button>
+                  <ul class="navbar-nav" id="navbarNav">
+                      <li class="list-item"><a href="" class="list-link">About</a></li>
+                      <li class="list-item"><a href="" class="list-link">Events</a></li>
+                      <li class="list-item"><a href="" class="list-link">Careers</a></li>
+                      <li class="list-item"><a href="" class="list-link">Support</a></li>
+                      <li class="list-item"><a href="" class="list-link">Products</a></li>
+                  </ul>
+              </div>
+              <div class="experience">
+                  <p>IMMERSIVE EXPERIENCE THAT DELIVER</p>
+              </div>
+          </div>
+
+          <div class="article-section">
+              <img src="images/desktop/image-interactive.jpg" class="dn-1" alt="">
+              <img src="images/mobile/image-interactive.jpg" class="dn-0 img-mobile-interective" alt="">
+              <div class="article-text">
+                  <h1>The leader in interactive vr</h1>
+                  <p>Respected Director sir and teachers and all the invited fellows specially the upgoing
+                       students I have to say that the youngest of our family and the 
+                       freshers a very good morning to all.</p>
+              </div>
+          </div>
+          
+          <div class="creation-section">
+            <div class="creation-text">
+                <h1>Our creations</h1>
+                <button class="btn-see-all dn-1">See all</button>
+            </div>
+          </div>
+            <div class="creation-articles">
+                <div class="article-box">
+                <div class="creation-item img1">
+                    <p class="image-title">DEEP <br> EARTH</p></p>
+                </div>
+            </div>
+            <div class="article-box">
+                <div class="creation-item img2">
+                   
+                    <p class="image-title">NIGHT <br> ARCADE</p></p>
+                </div>
+                </div>
+                <div class="article-box">
+                <div class="creation-item img3">
+                  
+                    <p class="image-title">SOCCER<br>TEAM VR</p></p>
+                </div>
+            </div>
+            <div class="article-box">
+                <div class="creation-item img4">
+                 
+                    <p class="image-title">THE<br> GRID</p></p>
+                </div>
+            </div>
+            <div class="article-box">
+                <div class="creation-item img5">
+               
+                    <p class="image-title">FROM UP<br> ABOVE BR</p></p>
+                </div>
+            </div>
+            <div class="article-box">
+                <div class="creation-item img6">
+               
+                    <p class="image-title ">POCkets<br> borealis</p></p>
+                </div>
+            </div>
+            <div class="article-box">
+                <div class="creation-item img7">
+                  
+                    <p class="image-title">THE<br> curiosiy</p></p>
+                </div>
+            </div>
+            <div class="article-box">
+                <div class="creation-item img8">
+                  
+                    <p class="image-title">Make it<br> fisheye</p></p>
+                </div>
+            </div>
+          </div>
+          <div class="btn-mobile">
+          <button class="btn-transparent dn-0">See All</button>
+        </div>
+
+          <!-- footer -->
+          <footer>
+              <div class="footer-contents">
+                  <div class="footer-nav">
+                      <h1>loopstudies</h1>
+                      <ul class="nav-contents">
+                        <li class="list-item"><a href="" class="list-link">About</a></li>
+                        <li class="list-item"><a href="" class="list-link">Events</a></li>
+                        <li class="list-item"><a href="" class="list-link">Careers</a></li>
+                        <li class="list-item"><a href="" class="list-link">Support</a></li>
+                        <li class="list-item"><a href="" class="list-link">Products</a></li>
+                    </ul>
+                  </div>
+                  <div class="social-icons">
+                      <div class="icons">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fab fa-instagram"></i>
+                      </div>
+                      <p>c 2021 Loopstudies All rights reserved</p>
+                  </div>
+              </div>
+          </footer>
+      </div>
+
+      <script>
+          function openNav() {
+              if(document.getElementById('navbarNav').style.opacity=='1')
+              {
+                  document.getElementById('navbarNav').style.top="80px";
+                  document.getElementById('navbarNav').style.opacity='0';
+                  document.getElementById('navbarNav').style.pointerEvents='none';
+                  document.getElementById('one').style.transform="rotate(0) translateY(0)";
+                  document.getElementById('two').style.display="block";
+                  document.getElementById('three').style.transform="rotate(0) translateY(0)";
+              }
+              else {
+                document.getElementById('navbarNav').style.top="110px";
+                  document.getElementById('navbarNav').style.opacity='1';
+                  document.getElementById('navbarNav').style.pointerEvents='none';
+                  document.getElementById('one').style.transform="rotate(45deg) translateY(3px)";
+                  document.getElementById('two').style.display="none";
+                  document.getElementById('three').style.transform="rotate(-45deg) translateY(-3px)";
+              }
+            
+           
+          }
+      </script>
+</body>
+</html>

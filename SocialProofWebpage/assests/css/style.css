@@ -1,0 +1,86 @@
+:root {
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--Light-Grayish-text-Magenta: hsl(300, 24%, 83%);
+--White: hsl(0, 0%, 100%);
+}
+html, *, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-text {
+    color: var(--Soft-Pink);
+}
+.main-section {
+    margin-top: 100px;
+}
+.home-section {
+    animation: animate 3s forwards;
+    transform: translate(-100px,0);
+    opacity: 0;
+}
+@keyframes animate {
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+.star-box-1,  .star-box-2,  .star-box-3 {
+    background-color: var(--Light-Grayish-Magenta);
+    max-width: 450px;
+    border-radius: 7px;
+    animation: animate-box 2s forwards;
+    transform: translate(0,-100px);
+    opacity: 0;
+}
+@keyframes animate-box {
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+.star-box-2 {
+    margin: 15px 0px 0px 30px;
+}
+.star-box-3 {
+    margin: 15px 0px 0px 60px;
+}
+.profile-box {
+    background-color: var(--Very-Dark-Magenta);
+    color: white;
+    border-radius: 7px;
+}
+.account-section {
+    padding-right: 25px;
+}
+.img-profile {
+    width: 40px;
+}
+
+.p-text, .verification, .profile-text  {
+    font-size: 14px;
+}
+.profile-text  {
+    color: var(--Light-Grayish-text-Magenta);
+}
+.verification {
+    opacity: 0.6;
+}
+
+@media (max-width:800px)
+{
+    .star-box-1, .star-box-2, .star-box-3 {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .home-section {
+        text-align: center;
+    }
+    .account-section {
+        padding-right: 0;
+    }
+}
